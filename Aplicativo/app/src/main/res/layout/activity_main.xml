@@ -29,18 +29,20 @@
         tools:layout_editor_absoluteY="254dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastro"
+        android:onClick="navigateLogin"
         tools:layout_editor_absoluteX="154dp"
         tools:layout_editor_absoluteY="531dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:onClick="navigateCadastro"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="596dp" />
 
