@@ -11,12 +11,30 @@
         android:id="@+id/textView"
         android:layout_width="335dp"
         android:layout_height="0dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:contentDescription="@string/app_name"
         android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clinícas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido,com isso ganhando moedas e contribuindo para evolução das clínicas. Baixe o app na App Store ou Google Play, faça login com seus dados de associado e aproveite todas as facilidades. Viva Bem – porque cuidar da saúde é viver melhor!"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="38dp" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="navigateCadastro"
+        android:text="Login"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <Button
+        android:id="@+id/button_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="navigateLogin"
+        android:text="Cadastro"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="389dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -28,24 +46,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
-
-    <Button
-        android:id="@+id/button_cadastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="navigateLogin"
-        android:text="Cadastro"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="341dp" />
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="navigateCadastro"
-        android:text="Login"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintVertical_bias="0.137" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
