@@ -28,16 +28,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="113dp" />
-
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Senha"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="127dp" />
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="99dp" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -45,16 +37,24 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="168dp" />
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="154dp" />
 
     <TextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Telefone"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="181dp" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="113dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -75,7 +75,32 @@
         android:layout_height="wrap_content"
         android:text="Sexo"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteY="220dp" />
+
+    <RadioGroup
+        android:id="@+id/activity_sexo"
+        android:layout_width="211dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="220dp">
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masculino"
+            android:textSize="10sp" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/editTextDate"
@@ -136,31 +161,6 @@
         android:text="Cadastrar"
         tools:layout_editor_absoluteX="149dp"
         tools:layout_editor_absoluteY="667dp" />
-
-    <RadioGroup
-        android:id="@+id/activity_sexo"
-        android:layout_width="211dp"
-        android:layout_height="32dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="231dp">
-
-        <RadioButton
-            android:id="@+id/radioButton9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Feminino"
-            android:textSize="10sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Masculino"
-            android:textSize="10sp" />
-    </RadioGroup>
 
     <TextView
         android:id="@+id/label"
