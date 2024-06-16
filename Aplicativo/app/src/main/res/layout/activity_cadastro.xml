@@ -102,15 +102,6 @@
             android:textSize="10sp" />
     </RadioGroup>
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="475dp" />
-
     <TextView
         android:id="@+id/label"
         android:layout_width="102dp"
@@ -120,31 +111,13 @@
         tools:layout_editor_absoluteY="330dp" />
 
     <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="402dp" />
-
-    <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextTextNumCartao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="330dp" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="542dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -166,7 +139,7 @@
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="CV"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="549dp" />
 
@@ -193,5 +166,32 @@
         android:text="Desejo receber newsletters e atualizações por e-mail."
         tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="608dp" />
+
+    <EditText
+        android:id="@+id/editTextNomeTitular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <EditText
+        android:id="@+id/editTextDataValidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <EditText
+        android:id="@+id/editTextCv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="535dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
