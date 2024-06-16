@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="335dp"
         android:layout_height="0dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@string/app_name"
         android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clinícas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido,com isso ganhando moedas e contribuindo para evolução das clínicas. Baixe o app na App Store ou Google Play, faça login com seus dados de associado e aproveite todas as facilidades. Viva Bem – porque cuidar da saúde é viver melhor!"
         android:textAlignment="center"
@@ -25,7 +25,7 @@
         android:onClick="navigateCadastro"
         android:text="Login"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="454dp" />
+        tools:layout_editor_absoluteY="445dp" />
 
     <Button
         android:id="@+id/button_cadastro"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:onClick="navigateLogin"
         android:text="Cadastro"
-        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="389dp" />
 
     <TextView
@@ -47,5 +47,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.137" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Missão"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="559dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
