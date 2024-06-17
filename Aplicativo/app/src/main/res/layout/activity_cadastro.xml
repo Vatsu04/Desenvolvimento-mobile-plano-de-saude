@@ -5,22 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="37dp" />
-
     <TextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="54dp" />
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="53dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -44,46 +35,39 @@
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
         android:text="Telefone"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Senha"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintStart_toStartOf="@+id/label"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="155dp"
         android:text="Dados Pessoais"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sexo"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="220dp" />
-
     <RadioGroup
         android:id="@+id/activity_sexo"
         android:layout_width="211dp"
         android:layout_height="32dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="50dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="220dp">
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText">
 
         <RadioButton
             android:id="@+id/radioButton9"
@@ -116,7 +100,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="143dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/label"
         tools:layout_editor_absoluteY="330dp" />
 
     <TextView
@@ -124,8 +110,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cartão de Crédito"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="302dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextNumCartao"
+        app:layout_constraintEnd_toEndOf="@+id/activity_sexo"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/label"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="0.875" />
 
     <Button
         android:id="@+id/button"
@@ -139,7 +129,7 @@
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CV"
+        android:text="CVV"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="549dp" />
 
@@ -148,24 +138,38 @@
         android:layout_width="112dp"
         android:layout_height="38dp"
         android:text="Data de Validade do Cartão"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.449" />
 
     <TextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nome Titular"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="414dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNomeTitular"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        app:layout_constraintVertical_bias="0.582" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="247dp"
         android:layout_height="46dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="13dp"
         android:text="Desejo receber newsletters e atualizações por e-mail."
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="608dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCv" />
 
     <EditText
         android:id="@+id/editTextNomeTitular"
@@ -182,8 +186,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="475dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeTitular"
+        app:layout_constraintVertical_bias="0.095" />
 
     <EditText
         android:id="@+id/editTextCv"
@@ -191,8 +199,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="535dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDataValidade"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/label"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDataValidade"
+        app:layout_constraintVertical_bias="0.108" />
 
     <Button
         android:id="@+id/button5"
@@ -201,5 +213,35 @@
         android:text="Voltar"
         tools:layout_editor_absoluteX="241dp"
         tools:layout_editor_absoluteY="667dp" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Senha"
+        app:layout_constraintStart_toStartOf="@+id/label"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Sexo"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_sexo"
+        app:layout_constraintEnd_toStartOf="@+id/label"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/activity_sexo"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

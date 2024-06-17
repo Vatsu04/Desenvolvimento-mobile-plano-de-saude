@@ -19,7 +19,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     public void cadastrar(View view) {
-        EditText emailField = findViewById(R.id.editTextTextEmailAddress);
+        EditText emailField = findViewById(R.id.textEmail);
         EditText passwordField = findViewById(R.id.editTextTextPassword);
         EditText phoneField = findViewById(R.id.editTextText);
         RadioGroup sexoField = findViewById(R.id.activity_sexo);

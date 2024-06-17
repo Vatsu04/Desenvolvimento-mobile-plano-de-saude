@@ -36,7 +36,7 @@
         android:id="@+id/textView9"
         android:layout_width="361dp"
         android:layout_height="139dp"
-        android:text="Fundada em 2005 por Maria Fernanda Costa, uma enfermeira apaixonada pela saúde e pelo bem-estar dos pacientes, a Viva Bem surgiu para resolver as dificuldades que muitos enfrentavam ao agendar consultas e encontrar clínicas de qualidade. Inicialmente, a Viva Bem era uma pequena clínica em São Paulo, que rapidamente ganhou a confiança dos pacientes pela qualidade do atendimento e atenção personalizada."
+        android:text="Fundada em 2005 por Sabrina Suares Coutinho Tascheri do Valle Ramon Passos Marçal, uma enfermeira apaixonada pela saúde e pelo bem-estar dos pacientes, a Viva Bem surgiu para resolver as dificuldades que muitos enfrentavam ao agendar consultas e encontrar clínicas de qualidade. Inicialmente, a Viva Bem era uma pequena clínica em São Paulo, que rapidamente ganhou a confiança dos pacientes pela qualidade do atendimento e atenção personalizada."
         android:textAlignment="center"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="408dp" />
