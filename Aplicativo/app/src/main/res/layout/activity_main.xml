@@ -7,25 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="279dp"
+        android:layout_height="233dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="2dp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="335dp"
         android:layout_height="0dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/app_name"
         android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clinícas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido,com isso ganhando moedas e contribuindo para evolução das clínicas. Baixe o app na App Store ou Google Play, faça login com seus dados de associado e aproveite todas as facilidades. Viva Bem – porque cuidar da saúde é viver melhor!"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="38dp" />
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="navigateCadastro"
-        android:text="Login"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="445dp" />
 
     <Button
         android:id="@+id/button_cadastro"
@@ -34,19 +33,16 @@
         android:onClick="navigateLogin"
         android:text="Cadastro"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="389dp" />
+        tools:layout_editor_absoluteY="467dp" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seja Bem Vindo!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        android:onClick="navigateCadastro"
+        android:text="Login"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="523dp" />
 
     <Button
         android:id="@+id/button8"
@@ -54,7 +50,7 @@
         android:layout_height="wrap_content"
         android:text="Missão"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="502dp" />
+        tools:layout_editor_absoluteY="580dp" />
 
     <Button
         android:id="@+id/button9"
@@ -62,6 +58,19 @@
         android:layout_height="wrap_content"
         android:text="Sobre"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="559dp" />
+        tools:layout_editor_absoluteY="637dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seja Bem Vindo!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

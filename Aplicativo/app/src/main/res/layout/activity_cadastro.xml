@@ -132,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
-        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteX="83dp"
         tools:layout_editor_absoluteY="667dp" />
 
     <TextView
@@ -193,5 +193,13 @@
         android:inputType="text"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="535dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="667dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
