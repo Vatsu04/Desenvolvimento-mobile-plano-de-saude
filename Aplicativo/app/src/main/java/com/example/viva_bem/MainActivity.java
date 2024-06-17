@@ -32,4 +32,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CadastroActivity.class);
         startActivity(intent);
     }
+
+    public void navigateSobre(View view) {
+        Intent intent = new Intent(this, SobreActivity.class);
+        startActivity(intent);
+    }
+
+    public void navigateMissao(View view) {
+        Intent intent = new Intent(this, MissaoActivity.class);
+        startActivity(intent);
+    }
+
+    public void navigateProgamaMilhas(View view) {
+        Intent intent = new Intent(this, ProgramaMilhasActivity.class);
+        startActivity(intent);
+    }
 }
