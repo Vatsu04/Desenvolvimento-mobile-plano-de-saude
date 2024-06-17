@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@tools:sample/avatars"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="361dp"
+        android:layout_height="122dp"
+        android:text="Em 2012, lançamos nosso primeiro portal online, facilitando o agendamento de consultas e a busca por informações sobre as clínicas conveniadas. Em 2020, apresentamos nosso aplicativo móvel, revolucionando a interação dos pacientes com os serviços de saúde. O app oferece agendamento rápido, localização de clínicas e avaliações, tornando-se uma ferramenta indispensável."
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nossa História"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre a Viva Bem"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="361dp"
+        android:layout_height="139dp"
+        android:text="Fundada em 2005 por Maria Fernanda Costa, uma enfermeira apaixonada pela saúde e pelo bem-estar dos pacientes, a Viva Bem surgiu para resolver as dificuldades que muitos enfrentavam ao agendar consultas e encontrar clínicas de qualidade. Inicialmente, a Viva Bem era uma pequena clínica em São Paulo, que rapidamente ganhou a confiança dos pacientes pela qualidade do atendimento e atenção personalizada."
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="364dp"
+        android:layout_height="103dp"
+        android:text="A Viva Bem é uma empresa dedicada a proporcionar cuidados de saúde de alta qualidade com atenção e carinho. Nossa missão é facilitar o acesso a serviços de saúde e melhorar a experiência dos pacientes em todas as etapas do atendimento."
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expansão e Inovação"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="764dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
