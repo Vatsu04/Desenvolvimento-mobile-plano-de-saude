@@ -40,17 +40,15 @@ public class CadastroActivity extends AppCompatActivity {
         String dataValidade = dataValidadeField.getText().toString();
         String cv = cvField.getText().toString();
 
-        String dados = "Email: " + email + "\n" +
-                "Senha: " + password + "\n" +
-                "Telefone: " + phone + "\n" +
-                "Sexo: " + sexo + "\n" +
-                "Número do Cartão: " + numeroCartao + "\n" +
-                "Nome do Titular: " + nomeTitular + "\n" +
-                "Data de Validade: " + dataValidade + "\n" +
-                "CV: " + cv;
-
         Intent intent = new Intent(this, ConfirmarDadosActivity.class);
-        intent.putExtra("dados", dados);
+        intent.putExtra("email", email);
+        intent.putExtra("password", password);
+        intent.putExtra("phone", phone);
+        intent.putExtra("sexo", sexo);
+        intent.putExtra("numeroCartao", numeroCartao);
+        intent.putExtra("nomeTitular", nomeTitular);
+        intent.putExtra("dataValidade", dataValidade);
+        intent.putExtra("cv", cv);
         startActivity(intent);
     }
 }
