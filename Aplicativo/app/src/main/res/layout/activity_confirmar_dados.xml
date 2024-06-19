@@ -178,11 +178,20 @@
 
             <Button
                 android:id="@+id/buttonConfirmar"
-                android:layout_width="wrap_content"
+                android:layout_width="378dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:onClick="confirmarDados"
                 android:text="Confirmar" />
+
+            <Button
+                android:id="@+id/buttonConfirmar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="voltarParaCadastro"
+                android:text="Voltar" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

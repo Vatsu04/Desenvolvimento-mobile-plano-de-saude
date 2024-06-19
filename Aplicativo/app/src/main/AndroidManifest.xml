@@ -27,6 +27,7 @@
 
         <activity android:name=".LoginActivity" />
         <activity android:name=".CadastroActivity" />
+        <activity android:name=".ConfirmarDadosActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -56,4 +56,9 @@ public class ConfirmarDadosActivity extends AppCompatActivity {
         startActivity(mainIntent);
         finish();
     }
+
+    public void voltarParaCadastro(View view){
+        Intent intent = new Intent(this, CadastroActivity.class);
+        startActivity(intent);
+    }
 }

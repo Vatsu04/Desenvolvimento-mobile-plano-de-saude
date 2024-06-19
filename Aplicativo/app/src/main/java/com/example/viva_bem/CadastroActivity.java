@@ -2,6 +2,7 @@ package com.example.viva_bem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -87,6 +88,15 @@ public class CadastroActivity extends AppCompatActivity {
             cvField.requestFocus();
             return;
         }
+
+        Log.i("Cadastro", "Email: " + email);
+        Log.i("Cadastro", "Password: " + password);
+        Log.i("Cadastro", "Phone: " + phone);
+        Log.i("Cadastro", "Sexo: " + sexo);
+        Log.i("Cadastro", "Número do Cartão: " + numeroCartao);
+        Log.i("Cadastro", "Nome do Titular: " + nomeTitular);
+        Log.i("Cadastro", "Data de Validade: " + dataValidade);
+        Log.i("Cadastro", "CV: " + cv);
 
         Intent intent = new Intent(this, ConfirmarDadosActivity.class);
         intent.putExtra("email", email);
