@@ -12,7 +12,7 @@
         android:text="Em 2012, lançamos nosso primeiro portal online, facilitando o agendamento de consultas e a busca por informações sobre as clínicas conveniadas. Em 2020, apresentamos nosso aplicativo móvel, revolucionando a interação dos pacientes com os serviços de saúde. O app oferece agendamento rápido, localização de clínicas e avaliações, tornando-se uma ferramenta indispensável."
         android:textAlignment="center"
         tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="574dp" />
+        tools:layout_editor_absoluteY="607dp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -34,8 +34,8 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="361dp"
-        android:layout_height="139dp"
+        android:layout_width="357dp"
+        android:layout_height="154dp"
         android:text="Fundada em 2005 por Sabrina Suares Coutinho Tascheri do Valle Ramon Passos Marçal, uma enfermeira apaixonada pela saúde e pelo bem-estar dos pacientes, a Viva Bem surgiu para resolver as dificuldades que muitos enfrentavam ao agendar consultas e encontrar clínicas de qualidade. Inicialmente, a Viva Bem era uma pequena clínica em São Paulo, que rapidamente ganhou a confiança dos pacientes pela qualidade do atendimento e atenção personalizada."
         android:textAlignment="center"
         tools:layout_editor_absoluteX="27dp"
@@ -57,7 +57,7 @@
         android:text="Expansão e Inovação"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="547dp" />
+        tools:layout_editor_absoluteY="580dp" />
 
     <Button
         android:id="@+id/button4"

@@ -21,48 +21,18 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="366dp"
+        android:layout_height="195dp"
         android:layout_marginTop="4dp"
         android:contentDescription="@string/app_name"
         android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clinícas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido,com isso ganhando moedas e contribuindo para evolução das clínicas. Baixe o app na App Store ou Google Play, faça login com seus dados de associado e aproveite todas as facilidades. Viva Bem – porque cuidar da saúde é viver melhor!"
         android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <Button
-        android:id="@+id/button_cadastro"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
-        android:onClick="navigateCadastro"
-        android:text="Cadastro"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="386dp" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sobre"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="506dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="navigateProgamaMilhas"
-        android:text="Programa Milhas"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="562dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Missão"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="449dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button_login"
@@ -70,8 +40,73 @@
         android:layout_height="wrap_content"
         android:onClick="navigateLogin"
         android:text="Login"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Missão"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendamentos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689" />
+
+    <Button
+        android:id="@+id/button_cadastro"
+        android:layout_width="106dp"
+        android:layout_height="48dp"
+        android:onClick="navigateCadastro"
+        android:text="Cadastro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="navigateProgamaMilhas"
+        android:text="Programa Milhas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.939" />
 
     <TextView
         android:id="@+id/textView2"
@@ -85,13 +120,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.188" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="613dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
