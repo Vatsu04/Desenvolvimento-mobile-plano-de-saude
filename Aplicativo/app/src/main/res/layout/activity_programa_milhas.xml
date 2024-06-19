@@ -21,7 +21,7 @@
         android:id="@+id/textView18"
         android:layout_width="360dp"
         android:layout_height="267dp"
-        android:text="Na Viva Bem, cuidamos da sua saúde e recompensamos sua fidelidade! Com o Programa Viva Bem Milhas, você acumula milhas ao usar as clínicas conveniadas e pode trocá-las por cupons em farmácias parceiras.  Como Funciona Use Clínicas Conveniadas: Marque e compareça a consultas. Acumule Milhas: Cada consulta realizada gera milhas. Troque por Cupons: Use suas milhas para obter descontos em farmácias parceiras. Benefícios Recompensas: Ganhe milhas e economize em produtos de saúde. Facilidade: Acompanhe e troque milhas pelo aplicativo Viva Bem. Parceiros Confiáveis: Farmácias renomadas para suas compras"
+        android:text="Na Viva Bem, cuidamos da sua saúde e recompensamos sua fidelidade! Com o Programa Viva Bem Milhas, você acumula milhas ao dar feedback sobre as clínicas conveniadas que visitou. Essas milhas podem ser trocadas por cupons em farmácias e supermercados parceiros. Cada vez que você avalia uma clínica após uma consulta, você acumula milhas automaticamente.  Essas milhas podem ser trocadas diretamente pelo aplicativo Viva Bem, de forma rápida e conveniente, por cupons em farmácias e supermercados parceiros. O programa oferece diversos benefícios: você ganha recompensas que podem ser usadas para economizar na compra de medicamentos, produtos de saúde e itens de supermercado. Acompanhe suas milhas pelo app e troque por descontos nas melhores farmácias e supermercados. Queremos que você viva bem, com mais saúde e economia."
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

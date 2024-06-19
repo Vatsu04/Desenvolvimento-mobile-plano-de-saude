@@ -10,7 +10,7 @@
         android:layout_width="490dp"
         android:layout_height="814dp"
         app:srcCompat="@drawable/background"
-        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-42dp" />
 
     <TextView
@@ -86,7 +86,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.388" />
 
     <TextView
         android:id="@+id/textView11"
