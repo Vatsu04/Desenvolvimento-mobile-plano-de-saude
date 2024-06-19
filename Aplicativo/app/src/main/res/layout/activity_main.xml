@@ -30,8 +30,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="366dp"
+        android:layout_height="195dp"
         android:layout_marginTop="4dp"
         android:contentDescription="@string/app_name"
         android:fontFamily="@font/alata"
