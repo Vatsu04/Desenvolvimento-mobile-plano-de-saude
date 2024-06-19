@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigateMain"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/btn_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigateCadastro"
+        android:text="Cadastro" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigateLogin"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btn_agendamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigateAgendamentos"
+        android:text="Agendamentos" />
+
+
+    <Button
+        android:id="@+id/btn_missao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigateMissao"
+        android:text="Missão" />
+
+    <Button
+        android:id="@+id/btn_sobre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigateSobre"
+        android:text="Sobre" />
+
+    <Button
+        android:id="@+id/btn_programa_milhas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigateProgamaMilhas"
+        android:text="Programa Milhas" />
+
+</LinearLayout>

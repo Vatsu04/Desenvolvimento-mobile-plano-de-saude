@@ -3,7 +3,6 @@ package com.example.viva_bem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,17 +15,6 @@ public class ConfirmarDadosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmar_dados);
 
-        TextView textViewEmail = findViewById(R.id.textViewEmail);
-        TextView textViewSenha = findViewById(R.id.textViewSenha);
-        TextView textViewTelefone = findViewById(R.id.textViewTelefone);
-        TextView textViewSexo = findViewById(R.id.textViewSexo);
-        TextView textViewNumeroCartao = findViewById(R.id.textViewNumeroCartao);
-        TextView textViewNomeTitular = findViewById(R.id.textViewNomeTitular);
-        TextView textViewDataValidade = findViewById(R.id.textViewDataValidade);
-        TextView textViewCv = findViewById(R.id.textViewCv);
-        Button buttonConfirmar = findViewById(R.id.buttonConfirmar);
-
-        // Retrieve data from intent
         Intent intent = getIntent();
         String email = intent.getStringExtra("email");
         String password = intent.getStringExtra("password");
@@ -37,24 +25,35 @@ public class ConfirmarDadosActivity extends AppCompatActivity {
         String dataValidade = intent.getStringExtra("dataValidade");
         String cv = intent.getStringExtra("cv");
 
-        // Display data in TextViews
+        TextView textViewEmail = findViewById(R.id.textViewEmail);
         textViewEmail.setText(email);
-        textViewSenha.setText(password);
-        textViewTelefone.setText(phone);
-        textViewSexo.setText(sexo);
-        textViewNumeroCartao.setText(numeroCartao);
-        textViewNomeTitular.setText(nomeTitular);
-        textViewDataValidade.setText(dataValidade);
-        textViewCv.setText(cv);
 
-        buttonConfirmar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ConfirmarDadosActivity.this, "Dados Corretos!", Toast.LENGTH_SHORT).show();
-                Intent mainIntent = new Intent(ConfirmarDadosActivity.this, MainActivity.class);
-                startActivity(mainIntent);
-                finish();
-            }
-        });
+        TextView textViewSenha = findViewById(R.id.textViewSenha);
+        textViewSenha.setText(password);
+
+        TextView textViewTelefone = findViewById(R.id.textViewTelefone);
+        textViewTelefone.setText(phone);
+
+        TextView textViewSexo = findViewById(R.id.textViewSexo);
+        textViewSexo.setText(sexo);
+
+        TextView textViewNumeroCartao = findViewById(R.id.textViewNumeroCartao);
+        textViewNumeroCartao.setText(numeroCartao);
+
+        TextView textViewNomeTitular = findViewById(R.id.textViewNomeTitular);
+        textViewNomeTitular.setText(nomeTitular);
+
+        TextView textViewDataValidade = findViewById(R.id.textViewDataValidade);
+        textViewDataValidade.setText(dataValidade);
+
+        TextView textViewCv = findViewById(R.id.textViewCv);
+        textViewCv.setText(cv);
+    }
+
+    public void confirmarDados(View view) {
+        Toast.makeText(this, "Cadastro Confirmado!", Toast.LENGTH_SHORT).show();
+        Intent mainIntent = new Intent(this, MainActivity.class);
+        startActivity(mainIntent);
+        finish();
     }
 }

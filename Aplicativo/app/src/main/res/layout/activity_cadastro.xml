@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteY="-25dp" />
 
     <TextView
-        android:id="@+id/Telefone"
+        android:id="@+id/email_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
@@ -65,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
@@ -77,14 +77,13 @@
         android:id="@+id/activity_sexo"
         android:layout_width="211dp"
         android:layout_height="32dp"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="50dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.321">
 
         <RadioButton
             android:id="@+id/radioButton10"
@@ -106,7 +105,7 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/Telefone"
+        android:id="@+id/num_cartao_credito"
         android:layout_width="118dp"
         android:layout_height="43dp"
         android:fontFamily="@font/alata"
@@ -129,21 +128,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/cartao_credito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
         android:text="Cartão de Crédito"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextNumCartao"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
 
     <Button
         android:id="@+id/button"
@@ -184,10 +184,10 @@
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <EditText
         android:id="@+id/editTextDataValidade"
@@ -197,10 +197,10 @@
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNomeTitular"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
 
     <EditText
         android:id="@+id/editTextCv"
@@ -212,8 +212,8 @@
         app:layout_constraintEnd_toEndOf="@+id/editTextDataValidade"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDataValidade"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
 
     <Button
         android:id="@+id/button5"
@@ -227,6 +227,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.957" />
+
+
 
     <EditText
         android:id="@+id/textEmail"

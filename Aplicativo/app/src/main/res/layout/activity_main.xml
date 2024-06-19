@@ -1,138 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    >
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="490dp"
-        android:layout_height="814dp"
-        app:srcCompat="@drawable/background"
-        tools:layout_editor_absoluteX="-27dp"
-        tools:layout_editor_absoluteY="-42dp" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="201dp"
+            android:layout_height="222dp"
+            android:layout_marginEnd="104dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011"
+            app:srcCompat="@drawable/logo" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="201dp"
-        android:layout_height="222dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="104dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="367dp"
+            android:layout_height="176dp"
+            android:contentDescription="@string/app_name"
+            android:fontFamily="@font/alata"
+            android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clínicas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido, com isso ganhando moedas e contribuindo para evolução das clínicas. Baixe o app na App Store ou Google Play, faça login com seus dados de associado e aproveite todas as facilidades. Viva Bem – porque cuidar da saúde é viver melhor!"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.427" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="366dp"
-        android:layout_height="195dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="@string/app_name"
-        android:fontFamily="@font/alata"
-        android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clinícas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido,com isso ganhando moedas e contribuindo para evolução das clínicas. Baixe o app na App Store ou Google Play, faça login com seus dados de associado e aproveite todas as facilidades. Viva Bem – porque cuidar da saúde é viver melhor!"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="0dp" />
+        <Button
+            android:id="@+id/button_cadastro"
+            android:layout_width="106dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="153dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="navigateCadastro"
+            android:text="Cadastro"
+            android:textColorLink="#2E6FF2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.654" />
 
-    <Button
-        android:id="@+id/button_cadastro"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="navigateCadastro"
-        android:text="Cadastro"
-        android:textColorLink="#2E6FF2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agendamentos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.721" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agendamentos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="106dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="9dp"
+            android:onClick="navigateLogin"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.655" />
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="9dp"
-        android:onClick="navigateLogin"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:onClick="navigateMissao"
+            android:text="Missão"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.813" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
-        android:text="Missão"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.882" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sobre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="navigateProgamaMilhas"
+            android:text="Programa Milhas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.963" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="navigateProgamaMilhas"
-        android:text="Programa Milhas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.963" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="Seja Bem Vindo!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.272" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/alata"
-        android:text="Seja Bem Vindo!"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="55dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="636dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.703"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="410dp"
+            android:layout_height="25dp"
+            android:background="#D11616"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Navigation drawer -->
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -34,7 +34,7 @@ public class CadastroActivity extends AppCompatActivity {
 
         int selectedSexoId = sexoField.getCheckedRadioButtonId();
         RadioButton selectedSexo = findViewById(selectedSexoId);
-        String sexo = selectedSexo != null ? selectedSexo.getText().toString() : "";
+        String sexo =  selectedSexo.getText().toString();
 
         String numeroCartao = numeroCartaoField.getText().toString();
         String nomeTitular = nomeTitularField.getText().toString();
@@ -101,7 +101,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     public void navigateVoltar(View view) {
-        Intent intent = new Intent(this, com.example.viva_bem.MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
