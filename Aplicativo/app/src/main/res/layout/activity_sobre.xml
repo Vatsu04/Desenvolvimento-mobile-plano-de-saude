@@ -5,13 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="490dp"
-        android:layout_height="814dp"
-        app:srcCompat="@drawable/background"
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="664dp"
+        android:onClick="navigateMain"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="415dp"
+        android:layout_height="25dp"
+        android:background="#00C8C0"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-42dp" />
+        tools:layout_editor_absoluteY="709dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="423dp"
+        android:layout_height="35dp"
+        android:background="#D11616"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="-8dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/textView12"

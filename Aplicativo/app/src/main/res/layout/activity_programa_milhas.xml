@@ -5,38 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="423dp"
+        android:layout_height="35dp"
+        android:background="#D11616"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="-8dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="415dp"
+        android:layout_height="25dp"
+        android:background="#00C8C0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="709dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
         android:text="Programa Milhas Viva Bem"
-        android:textSize="20sp"
+        android:textSize="21sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.252" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="360dp"
-        android:layout_height="267dp"
+        android:layout_width="369dp"
+        android:layout_height="510dp"
+        android:fontFamily="@font/alata"
         android:text="Na Viva Bem, cuidamos da sua saúde e recompensamos sua fidelidade! Com o Programa Viva Bem Milhas, você acumula milhas ao dar feedback sobre as clínicas conveniadas que visitou. Essas milhas podem ser trocadas por cupons em farmácias e supermercados parceiros. Cada vez que você avalia uma clínica após uma consulta, você acumula milhas automaticamente.  Essas milhas podem ser trocadas diretamente pelo aplicativo Viva Bem, de forma rápida e conveniente, por cupons em farmácias e supermercados parceiros. O programa oferece diversos benefícios: você ganha recompensas que podem ser usadas para economizar na compra de medicamentos, produtos de saúde e itens de supermercado. Acompanhe suas milhas pelo app e troque por descontos nas melhores farmácias e supermercados. Queremos que você viva bem, com mais saúde e economia."
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.534" />
+        app:layout_constraintVertical_bias="0.941" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="221dp"
-        android:layout_height="234dp"
+        android:layout_width="222dp"
+        android:layout_height="214dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -50,9 +73,9 @@
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
