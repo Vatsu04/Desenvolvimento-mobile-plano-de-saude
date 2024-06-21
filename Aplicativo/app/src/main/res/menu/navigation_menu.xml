@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:onClick="navigateVoltar"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_cad"
+        android:onClick="navigateCadastro"
+        android:title="Cadastro" />
+
+    <item
+        android:id="@+id/nav_log"
+        android:onClick="navigateLogin"
+        android:title="Login" />
+    <item
+        android:id="@+id/nav_clientes"
+        android:title="Clientes" />
+    <item
+        android:id="@+id/nav_agendamentos"
+        android:title="Agendamentos" />
+    <item
+        android:id="@+id/nav_milhas"
+        android:title="Programa Milhas" />
+    <item
+        android:id="@+id/nav_missao"
+        android:title="Missão" />
+    <item
+        android:id="@+id/nav_sobre"
+        android:title="Sobre" />
+
+
+
+</menu>

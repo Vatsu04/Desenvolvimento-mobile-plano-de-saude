@@ -16,7 +16,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/constraintLayout3"
         android:layout_width="423dp"
         android:layout_height="35dp"
         android:background="#D11616"
@@ -57,14 +57,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.562"
         app:srcCompat="@drawable/raia" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="322dp"
-        android:layout_height="165dp"
-        app:srcCompat="@drawable/Dove_logo"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="517dp" />
 
     <Button
         android:id="@+id/button10"

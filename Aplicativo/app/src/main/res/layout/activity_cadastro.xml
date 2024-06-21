@@ -6,12 +6,16 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="423dp"
-        android:layout_height="35dp"
+        android:id="@+id/constraintLayout3"
+        android:layout_width="434dp"
+        android:layout_height="26dp"
         android:background="#D11616"
-        tools:layout_editor_absoluteX="-6dp"
-        tools:layout_editor_absoluteY="-8dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -335,11 +339,16 @@
         app:layout_constraintVertical_bias="0.775" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="415dp"
-        android:layout_height="25dp"
+        android:id="@+id/constraintLayout4"
+        android:layout_width="407dp"
+        android:layout_height="20dp"
         android:background="#00C8C0"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="709dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -7,33 +7,43 @@
     tools:context=".ConfirmarDadosActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="430dp"
-        android:layout_height="29dp"
-        android:background="#D11616"
-        tools:layout_editor_absoluteY="671dp">
+        android:id="@+id/constraintLayout3"
+        android:layout_width="413dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:background="#00C8C0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="1.0">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="430dp"
-        android:layout_height="29dp"
+        android:id="@+id/constraintLayout3"
+        android:layout_width="411dp"
+        android:layout_height="28dp"
         android:background="#D11616"
-        tools:layout_editor_absoluteX="-6dp"
-        tools:layout_editor_absoluteY="-8dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="415dp"
+        android:layout_height="692dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.305"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.675">
 
         <LinearLayout
             android:layout_width="match_parent"

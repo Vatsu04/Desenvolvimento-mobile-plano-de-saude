@@ -8,16 +8,21 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/main_content">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
             android:layout_width="415dp"
             android:layout_height="25dp"
             android:background="#00C8C0"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="709dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="1.0">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -36,13 +41,13 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="367dp"
-            android:layout_height="176dp"
+            android:layout_width="369dp"
+            android:layout_height="201dp"
             android:contentDescription="@string/app_name"
             android:fontFamily="@font/alata"
-            android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clínicas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido, com isso ganhando moedas e contribuindo para evolução das clínicas. Baixe o app na App Store ou Google Play, faça login com seus dados de associado e aproveite todas as facilidades. Viva Bem – porque cuidar da saúde é viver melhor!"
+            android:text="Bem-vindo à Viva Bem, onde cuidamos da sua saúde com atenção e carinho. Estamos lançando um aplicativo inovador para facilitar a marcação de consultas em clínicas conveniadas, com funcionalidades como agendamento rápido, localização de clínicas e avaliações de clínicas. Além disso, o aplicativo permite que você avalie as clínicas e o atendimento recebido, com isso ganhando moedas e contribuindo para evolução das clínicas.  Clique no icone de menu para saber mais sobre nosso app e empresa!"
             android:textAlignment="center"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -61,21 +66,10 @@
             android:textColorLink="#2E6FF2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.654" />
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Agendamentos"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.721" />
+            app:layout_constraintVertical_bias="0.727" />
 
         <Button
             android:id="@+id/button_login"
@@ -86,48 +80,10 @@
             android:text="Login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.655" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="9dp"
-            android:onClick="navigateMissao"
-            android:text="Missão"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.813" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sobre"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.882" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="navigateProgamaMilhas"
-            android:text="Programa Milhas"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.963" />
+            app:layout_constraintVertical_bias="0.823" />
 
         <TextView
             android:id="@+id/textView2"
@@ -151,22 +107,37 @@
             android:layout_marginBottom="636dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.407"
+            app:layout_constraintVertical_bias="0.37"
             app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="410dp"
+            android:id="@+id/constraintLayout5"
+            android:layout_width="416dp"
             android:layout_height="25dp"
             android:background="#D11616"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="1dp">
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Navigation drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="209dp"
+        app:menu="@menu/navigation_menu"
+        android:layout_height="754dp"
+        android:layout_gravity="start" />
+
+
+
+
 </androidx.drawerlayout.widget.DrawerLayout>

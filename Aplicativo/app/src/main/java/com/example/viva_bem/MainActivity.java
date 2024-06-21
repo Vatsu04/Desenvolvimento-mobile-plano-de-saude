@@ -12,7 +12,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.util.Log;
 import android.view.View;
-import com.example.viva_bem.DrawerUtil;
+
+import com.google.android.material.navigation.NavigationView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,23 +24,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        Log.i("13213", "!#!@#!@#");
         setContentView(R.layout.activity_main);
 
         drawerLayout = findViewById(R.id.drawer_layout);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_content), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        findViewById(R.id.imageView6).setOnClickListener((view) -> {
+                drawerLayout.openDrawer(GravityCompat.START);
         });
 
-        findViewById(R.id.imageView6).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DrawerUtil.openDrawer(MainActivity.this);
-            }
-        });
+        NavigationView navigationView = findViewById(R.id.navigationView);
+        navigationView.setItemIconTintList(null);
     }
 
     public void navigateLogin(View view) {
@@ -46,11 +41,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openDrawer() {
-        if (drawerLayout != null) {
-            drawerLayout.openDrawer(GravityCompat.START);
-        }
-    }
 
     public void navigateAgendamentos(View view) {
         Intent intent = new Intent(this, AgendamentosActitvity.class);
