@@ -107,10 +107,10 @@
             android:layout_marginBottom="636dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintHorizontal_bias="0.957"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.37"
+            app:layout_constraintVertical_bias="0.703"
             app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
         <androidx.constraintlayout.widget.ConstraintLayout

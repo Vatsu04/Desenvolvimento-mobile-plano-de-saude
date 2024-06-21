@@ -9,7 +9,7 @@
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="664dp"
+        android:layout_marginBottom="652dp"
         android:onClick="navigateMain"
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,14 +127,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.76" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voltar"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="764dp" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="357dp"
@@ -145,5 +137,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="55dp"
+        android:layout_height="62dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="31dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
