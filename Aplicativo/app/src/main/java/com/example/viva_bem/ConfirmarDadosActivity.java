@@ -52,7 +52,7 @@ public class ConfirmarDadosActivity extends AppCompatActivity {
 
     public void confirmarDados(View view) {
         Toast.makeText(this, "Cadastro Confirmado!", Toast.LENGTH_SHORT).show();
-        Intent mainIntent = new Intent(this, MainActivity.class);
+        Intent mainIntent = new Intent(this, MenuActivity.class);
         startActivity(mainIntent);
         finish();
     }
