@@ -8,22 +8,23 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MissaoActivity extends AppCompatActivity {
+public class MilhasActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_missao);
+        setContentView(R.layout.activity_milhas);
 
         drawerLayout = findViewById(R.id.drawer_layout);
 
-        findViewById(R.id.imageView9).setOnClickListener((view) -> {
+        findViewById(R.id.imageView6).setOnClickListener((view) -> {
             drawerLayout.openDrawer(GravityCompat.START);
         });
 
         NavigationView navigationView = findViewById(R.id.navigationView);
         navigationView.setItemIconTintList(null);
     }
+
 }

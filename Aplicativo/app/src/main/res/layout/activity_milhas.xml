@@ -1,306 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".YourActivityName">
 
+    <!-- Main Content Layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="415dp"
-        android:layout_height="25dp"
-        android:background="#00C8C0"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="709dp">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="423dp"
-        android:layout_height="35dp"
-        android:background="#D11616"
-        tools:layout_editor_absoluteX="-6dp"
-        tools:layout_editor_absoluteY="-8dp">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="53dp"
-        android:layout_height="59dp"
-        app:srcCompat="@drawable/simple_gold_coin"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="71dp" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="374dp"
-        android:layout_height="108dp"
-        android:background="#D9D9D9"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="135dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="202dp"
-            android:layout_height="101dp"
+            android:id="@+id/imageView"
+            android:layout_width="222dp"
+            android:layout_height="214dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.011"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.428"
-            app:srcCompat="@drawable/drogarias_pacheco_logo" />
+            app:layout_constraintVertical_bias="0.013"
+            app:srcCompat="@drawable/logo" />
 
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="151dp"
-            android:layout_height="52dp"
-            android:text="Cupon de desconto de R$50,00 em lojas da Drogarias Pacheco"
-            android:textColor="#383838"
-            tools:layout_editor_absoluteX="204dp"
-            tools:layout_editor_absoluteY="3dp" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="52dp"
-            android:layout_height="42dp"
-            app:srcCompat="@drawable/simple_gold_coin"
-            tools:layout_editor_absoluteX="230dp"
-            tools:layout_editor_absoluteY="63dp" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:text="70"
-            android:textColor="#383838"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="218dp"
-            tools:layout_editor_absoluteY="77dp" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="91dp"
-            android:layout_height="39dp"
-            android:text="Obter"
-            tools:layout_editor_absoluteX="282dp"
-            tools:layout_editor_absoluteY="66dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="374dp"
-        android:layout_height="108dp"
-        android:background="#D9D9D9"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="377dp">
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="151dp"
-            android:layout_height="52dp"
-            android:text="Cupon de desconto de R$50,00 em mercados da Zona Sul"
-            android:textColor="#383838"
-            tools:layout_editor_absoluteX="204dp"
-            tools:layout_editor_absoluteY="3dp" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="52dp"
-            android:layout_height="42dp"
-            app:srcCompat="@drawable/simple_gold_coin"
-            tools:layout_editor_absoluteX="230dp"
-            tools:layout_editor_absoluteY="63dp" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:text="80"
-            android:textColor="#383838"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="218dp"
-            tools:layout_editor_absoluteY="77dp" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="91dp"
-            android:layout_height="39dp"
-            android:text="Obter"
-            tools:layout_editor_absoluteX="282dp"
-            tools:layout_editor_absoluteY="66dp" />
-
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="202dp"
-            android:layout_height="106dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.011"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/zonasul" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="373dp"
-        android:layout_height="97dp"
-        android:background="#D9D9D9"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="266dp">
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="196dp"
-            android:layout_height="90dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="#D11616"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.571"
-            app:srcCompat="@drawable/drogarias_pacheco_logo" />
+            app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="150dp"
-            android:layout_height="51dp"
-            android:backgroundTint="#FFFFFF"
-            android:text="Cupon de desconto de R$90,00 em lojas da Drogarias Pacheco"
-            android:textColor="#383838"
-            tools:layout_editor_absoluteX="203dp"
-            tools:layout_editor_absoluteY="1dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="52dp"
-            android:layout_height="42dp"
-            app:srcCompat="@drawable/simple_gold_coin"
-            tools:layout_editor_absoluteX="232dp"
-            tools:layout_editor_absoluteY="57dp" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="29dp"
-            android:layout_height="21dp"
-            android:text="100"
-            android:textColor="#383838"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="211dp"
-            tools:layout_editor_absoluteY="73dp" />
-
-        <Button
-            android:id="@+id/button13"
-            android:layout_width="88dp"
-            android:layout_height="40dp"
-            android:text="Obter"
-            tools:layout_editor_absoluteX="284dp"
-            tools:layout_editor_absoluteY="57dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="374dp"
-        android:layout_height="108dp"
-        android:background="#D9D9D9"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="507dp">
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="151dp"
-            android:layout_height="52dp"
-            android:text="Cupon de desconto de R$25,00 em lojas da Droga Raia"
-            android:textColor="#383838"
-            tools:layout_editor_absoluteX="204dp"
-            tools:layout_editor_absoluteY="3dp" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="52dp"
-            android:layout_height="42dp"
-            app:srcCompat="@drawable/simple_gold_coin"
-            tools:layout_editor_absoluteX="230dp"
-            tools:layout_editor_absoluteY="63dp" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:text="20"
-            android:textColor="#383838"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="218dp"
-            tools:layout_editor_absoluteY="77dp" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="91dp"
-            android:layout_height="39dp"
-            android:text="Obter"
-            tools:layout_editor_absoluteX="282dp"
-            tools:layout_editor_absoluteY="66dp" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="196dp"
-            android:layout_height="92dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="415dp"
+            android:layout_height="25dp"
+            android:background="#00C8C0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="Missão da Viva Bem:"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout6"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/raia" />
+            app:layout_constraintVertical_bias="0.329" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="371dp"
+            android:layout_height="428dp"
+            android:fontFamily="@font/alata"
+            android:text="A Viva Bem se dedica a oferecer cuidados de saúde de alta qualidade com atenção e carinho. Nossa missão é facilitar o acesso aos serviços de saúde e melhorar a experiência dos pacientes em todas as etapas do atendimento. Desde nossa fundação em 2005 por Sabrina Suares Coutinho Tascheri do Valle Ramon Passos Marçal, uma enfermeira comprometida com o bem-estar dos pacientes, buscamos resolver as dificuldades no agendamento de consultas e na busca por clínicas de qualidade. Com um início modesto em São Paulo, ganhamos a confiança dos pacientes pela qualidade do atendimento e atenção personalizada. Em 2012, lançamos nosso portal online e, em 2020, nosso aplicativo móvel revolucionou a interação dos pacientes com serviços de saúde, oferecendo agendamento rápido, localização de clínicas e avaliações."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.897" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="navigateMain"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.071" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="55dp"
+            android:layout_height="62dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.052"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView19"
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/alata"
-        android:text="Cupons"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
 
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="631dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="90dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="X"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="90dp" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="navigateMain"
-        android:text="Voltar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="32dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
