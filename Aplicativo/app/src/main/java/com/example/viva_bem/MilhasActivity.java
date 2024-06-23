@@ -16,8 +16,10 @@ import com.google.android.material.navigation.NavigationView;
 public class MilhasActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
-    private int milhas = 200;
+    private int milhas = 0;
     private TextView milhasTextView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,11 @@ public class MilhasActivity extends AppCompatActivity {
         findViewById(R.id.imageView6).setOnClickListener((view) -> {
             drawerLayout.openDrawer(GravityCompat.START);
         });
+
+        Intent intent = getIntent();
+        if (intent.hasExtra("milhas")) {
+            milhas = intent.getIntExtra("milhas", 0);
+        }
 
         NavigationView navigationView = findViewById(R.id.navigationView);
         navigationView.setItemIconTintList(null);

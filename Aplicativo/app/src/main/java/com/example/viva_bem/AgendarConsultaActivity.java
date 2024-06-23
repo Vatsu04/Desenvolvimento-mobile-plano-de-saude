@@ -13,8 +13,8 @@ public class AgendarConsultaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agendamentos);
-        milhasTextView = findViewById(R.id.textView21);
+        setContentView(R.layout.activity_agendar_consulta);
+        milhasTextView = findViewById(R.id.textView35);
 
         Intent intent = getIntent();
         if (intent.hasExtra("milhas")) {

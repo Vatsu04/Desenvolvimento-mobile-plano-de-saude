@@ -18,6 +18,11 @@ public class EscreverFeedbackActivity extends AppCompatActivity {
 
         milhasTextView = findViewById(R.id.textView35);
 
+        String clinicName = getIntent().getStringExtra("CLINIC_NAME");
+
+        TextView clinicNameTextView = findViewById(R.id.clinicNameTextView);
+        clinicNameTextView.setText(clinicName);
+
         Intent intent = getIntent();
         if (intent.hasExtra("milhas")) {
             milhas = intent.getIntExtra("milhas", 0);
