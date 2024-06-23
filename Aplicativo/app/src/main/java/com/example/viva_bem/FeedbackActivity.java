@@ -28,7 +28,31 @@ public class FeedbackActivity extends AppCompatActivity {
 
         updateMilhasUI();
 
-        Button escreverFeedbackButton = findViewById(R.id.buttonEscreverFeedback); // Implementar botão
+        Button escreverFeedbackButton = findViewById(R.id.buttonEscreverFeedback);
+        escreverFeedbackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateToEscreverFeedbackActivity();
+            }
+        });
+
+        Button escreverFeedbackButton2 = findViewById(R.id.buttonEscreverFeedback);
+        escreverFeedbackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateToEscreverFeedbackActivity();
+            }
+        });
+
+        Button escreverFeedbackButton3 = findViewById(R.id.buttonEscreverFeedback);
+        escreverFeedbackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateToEscreverFeedbackActivity();
+            }
+        });
+
+        Button escreverFeedbackButton4 = findViewById(R.id.buttonEscreverFeedback);
         escreverFeedbackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +60,8 @@ public class FeedbackActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     private void updateMilhasUI() {
         milhasTextView.setText(String.valueOf(milhas));
