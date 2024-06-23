@@ -46,7 +46,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void navigateToAgendamentosActivity() {
-        Intent intent = new Intent(this, AgendamentosActivity.class);
+        Intent intent = new Intent(this, AgendarConsultaActivity.class);
         intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
@@ -54,6 +54,11 @@ public class MenuActivity extends AppCompatActivity {
     public void navigateToFeedbackActivity() {
         Intent intent = new Intent(this, FeedbackActivity.class);
         intent.putExtra("milhas", milhas);
+        startActivity(intent);
+    }
+
+    public void logOut(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

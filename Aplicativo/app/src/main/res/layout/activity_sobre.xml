@@ -20,17 +20,22 @@
             android:text="Voltar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.045" />
+            app:layout_constraintVertical_bias="0.055" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout9"
             android:layout_width="415dp"
             android:layout_height="25dp"
             android:background="#00C8C0"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="709dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -38,9 +43,14 @@
             android:id="@+id/constraintLayout3"
             android:layout_width="423dp"
             android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
             android:background="#D11616"
-            tools:layout_editor_absoluteX="-6dp"
-            tools:layout_editor_absoluteY="-8dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -148,9 +158,13 @@
             android:id="@+id/imageView14"
             android:layout_width="55dp"
             android:layout_height="62dp"
-            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
-            tools:layout_editor_absoluteX="347dp"
-            tools:layout_editor_absoluteY="31dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="0.057"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -35,9 +35,23 @@ public class EscreverFeedbackActivity extends AppCompatActivity {
         milhasTextView.setText(String.valueOf(milhas));
     }
 
+    private void incrementMilhasUI(){
+        milhas += 300;
+        updateMilhasUI();
+    }
+
     public void navigateBack() {
         Intent intent = new Intent(this, FeedbackActivity.class);
         intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
+
+    public void enviarFeedback(){
+        Intent intent = new Intent(this, MenuActivity.class);
+        incrementMilhasUI();
+        intent.putExtra("milhas", milhas);
+        startActivity(intent);
+    }
+
+
 }

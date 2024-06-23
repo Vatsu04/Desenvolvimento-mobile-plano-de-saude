@@ -51,4 +51,9 @@ public class FeedbackActivity extends AppCompatActivity {
         intent.putExtra("CLINIC_NAME", clinicName);
         startActivity(intent);
     }
+
+    public void navegarMenu(){
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
+    }
 }
