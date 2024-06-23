@@ -15,18 +15,23 @@
         android:title="Login" />
     <item
         android:id="@+id/nav_clientes"
+        android:onClick="navigateClientes"
         android:title="Clientes" />
     <item
         android:id="@+id/nav_agendamentos"
+        android:onClick="navigateAgendamentos"
         android:title="Agendamentos" />
     <item
         android:id="@+id/nav_milhas"
+        android:onClick="navigateProgamaMilhas"
         android:title="Programa Milhas" />
     <item
         android:id="@+id/nav_missao"
+        android:onClick="navigateMissao"
         android:title="Missão" />
     <item
         android:id="@+id/nav_sobre"
+        android:onClick="navigateSobre"
         android:title="Sobre" />
 
 

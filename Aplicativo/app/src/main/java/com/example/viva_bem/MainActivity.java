@@ -67,5 +67,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void navigateClientes(View view) {
+        Intent intent = new Intent(this, ClienteActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 }

@@ -5,20 +5,18 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 
-public class MenuActivity extends AppCompatActivity {
+public class EscreverFeedbackActivity extends AppCompatActivity {
 
-    private DrawerLayout drawerLayout;
-    private int milhas = 0;
+    private int milhas;
     private TextView milhasTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_escrever_feedback);
 
-        milhasTextView = findViewById(R.id.textView20);
+        milhasTextView = findViewById(R.id.textView35);
 
         Intent intent = getIntent();
         if (intent.hasExtra("milhas")) {
@@ -32,19 +30,7 @@ public class MenuActivity extends AppCompatActivity {
         milhasTextView.setText(String.valueOf(milhas));
     }
 
-    public void navigateToMilhasActivity() {
-        Intent intent = new Intent(this, MilhasActivity.class);
-        intent.putExtra("milhas", milhas);
-        startActivity(intent);
-    }
-
-    public void navigateToAgendamentosActivity() {
-        Intent intent = new Intent(this, AgendamentosActivity.class);
-        intent.putExtra("milhas", milhas);
-        startActivity(intent);
-    }
-
-    public void navigateToFeedbackActivity() {
+    public void navigateBack() {
         Intent intent = new Intent(this, FeedbackActivity.class);
         intent.putExtra("milhas", milhas);
         startActivity(intent);
