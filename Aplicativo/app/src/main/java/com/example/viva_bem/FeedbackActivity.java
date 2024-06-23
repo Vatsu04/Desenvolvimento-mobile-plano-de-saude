@@ -28,7 +28,7 @@ public class FeedbackActivity extends AppCompatActivity {
 
         updateMilhasUI();
 
-        Button escreverFeedbackButton = findViewById(R.id.buttonEscreverFeedback);
+        Button escreverFeedbackButton = findViewById(R.id.feedbackCepem);
         escreverFeedbackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

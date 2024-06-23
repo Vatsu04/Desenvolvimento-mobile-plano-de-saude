@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void navigateAgendamentos(View view) {
-        Intent intent = new Intent(this, AgendamentosActitvity.class);
+        Intent intent = new Intent(this,  AgendamentosActivity.class);
         startActivity(intent);
     }
 
