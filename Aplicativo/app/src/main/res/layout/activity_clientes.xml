@@ -28,16 +28,18 @@
 
         <TextView
             android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="392dp"
+            android:layout_height="74dp"
             android:fontFamily="@font/alata"
-            android:text="Empresas que utilizam seu plano de saúde"
+            android:text="Empresas que utilizam nosso plano de saúde:"
+            android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.135" />
+            app:layout_constraintVertical_bias="0.143" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -48,7 +50,7 @@
             app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.222"
+            app:layout_constraintVertical_bias="0.273"
             app:srcCompat="@drawable/drogarias_pacheco_logo" />
 
         <ImageView
@@ -59,7 +61,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.562"
+            app:layout_constraintVertical_bias="0.59"
             app:srcCompat="@drawable/raia" />
 
         <Button
@@ -93,10 +95,10 @@
             android:layout_height="171dp"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintHorizontal_bias="0.522"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.891"
+            app:layout_constraintVertical_bias="0.916"
             app:srcCompat="@drawable/zonasul" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

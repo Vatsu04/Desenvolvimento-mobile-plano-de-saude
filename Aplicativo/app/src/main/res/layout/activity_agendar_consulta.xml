@@ -42,7 +42,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="381dp"
             android:layout_height="105sp"
-            android:background="#656565"
+            android:background="#D9D9D9"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
@@ -78,7 +78,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="381dp"
             android:layout_height="105sp"
-            android:background="#656565"
+            android:background="#D9D9D9"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
@@ -115,7 +115,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="381dp"
             android:layout_height="105sp"
-            android:background="#656565"
+            android:background="#D9D9D9"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
@@ -150,7 +150,7 @@
             android:id="@+id/constraintLayout7"
             android:layout_width="381dp"
             android:layout_height="105sp"
-            android:background="#656565"
+            android:background="#D9D9D9"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
@@ -190,10 +190,10 @@
             android:text="X"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.073" />
+            app:layout_constraintVertical_bias="0.098" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -201,10 +201,10 @@
             android:layout_height="59dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.416"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.046"
+            app:layout_constraintVertical_bias="0.071"
             app:srcCompat="@drawable/simple_gold_coin" />
 
         <TextView
@@ -214,10 +214,10 @@
             android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintHorizontal_bias="0.603"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.073" />
+            app:layout_constraintVertical_bias="0.098" />
 
         <Button
             android:id="@+id/button6"
@@ -226,23 +226,32 @@
             android:text="Voltar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.049"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.92" />
+            app:layout_constraintVertical_bias="0.071" />
 
         <TextView
             android:id="@+id/textView42"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
             android:text="Selecione uma clinica para marcar sua consulta:"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.137" />
+            app:layout_constraintVertical_bias="0.151" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="55dp"
+            android:layout_height="62dp"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+            tools:layout_editor_absoluteX="344dp"
+            tools:layout_editor_absoluteY="35dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
