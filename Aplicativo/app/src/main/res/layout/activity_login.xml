@@ -27,17 +27,14 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="415dp"
             android:layout_height="25dp"
+            android:layout_marginStart="8dp"
             android:background="#00C8C0"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="709dp" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="423dp"
-            android:layout_height="35dp"
-            android:background="#D11616"
-            tools:layout_editor_absoluteX="-6dp"
-            tools:layout_editor_absoluteY="-8dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/button2"
@@ -69,11 +66,12 @@
             android:id="@+id/editTextTextPassword2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="96dp"
             android:ems="10"
             android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="326dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
 
         <TextView
             android:id="@+id/textView5"
@@ -117,6 +115,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.558" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="423dp"
+            android:layout_height="35dp"
+            android:background="#D11616"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -125,6 +133,8 @@
         android:layout_width="209dp"
         app:menu="@menu/navigation_menu"
         android:layout_height="754dp"
-        android:layout_gravity="start" />
+        android:layout_gravity="start" >
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
