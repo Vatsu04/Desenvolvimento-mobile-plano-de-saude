@@ -33,10 +33,10 @@
             android:layout_marginEnd="104dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.011"
+            app:layout_constraintVertical_bias="0.017"
             app:srcCompat="@drawable/logo" />
 
         <TextView
@@ -59,17 +59,16 @@
             android:id="@+id/button_cadastro"
             android:layout_width="106dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="153dp"
             android:layout_marginBottom="8dp"
             android:onClick="navigateCadastro"
             android:text="Cadastro"
             android:textColorLink="#2E6FF2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.699" />
+            app:layout_constraintVertical_bias="0.722" />
 
         <Button
             android:id="@+id/button_login"
@@ -84,7 +83,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.784" />
+            app:layout_constraintVertical_bias="0.814" />
 
         <TextView
             android:id="@+id/textView2"
@@ -112,10 +111,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="41dp"
+            android:layout_height="43dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.943"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout5"
+            app:layout_constraintVertical_bias="0.069"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu">
 
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -8,13 +8,11 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <!-- Main content -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white">
 
-        <!-- Existing content from constraintLayout3 -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout3"
             android:layout_width="414dp"
@@ -102,18 +100,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-
-            <TextView
-                android:id="@+id/textView44"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/alata"
-                android:text="www.vivabem.com"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="120dp"
-                tools:layout_editor_absoluteY="663dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintVertical_bias="1.0"/>
 
         <TextView
             android:id="@+id/textView50"
@@ -122,8 +109,11 @@
             android:fontFamily="@font/alata"
             android:text="www.vivabem.com"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="442dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.625" />
 
         <ImageView
             android:id="@+id/imageView28"

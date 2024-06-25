@@ -2,6 +2,7 @@ package com.example.viva_bem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,6 +57,7 @@ public class MenuActivity extends AppCompatActivity {
         intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
+
 
     public void logOut(){
         Intent intent = new Intent(this, MainActivity.class);

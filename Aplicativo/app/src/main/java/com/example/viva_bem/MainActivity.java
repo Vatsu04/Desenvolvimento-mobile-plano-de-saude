@@ -23,7 +23,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        drawerLayout = findViewById(R.id.drawer_layout);
 
+        findViewById(R.id.imageView25).setOnClickListener((view) -> {
+            drawerLayout.openDrawer(GravityCompat.START);
+        });
+
+        NavigationView navigationView = findViewById(R.id.navigationView);
+        navigationView.setItemIconTintList(null);
     }
 
     public void navigateLogin(View view) {
@@ -33,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void navigateAgendamentos(View view) {
-        Intent intent = new Intent(this,  AgendamentosActivity.class);
+        Intent intent = new Intent(this, AgendamentosInfoActivity.class);
         startActivity(intent);
     }
 
@@ -61,12 +68,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ClienteActivity.class);
         startActivity(intent);
     }
-
-    public void log_in(View view){
-        Intent intent = new Intent(this, MenuActivity.class);
-        startActivity(intent);
-    }
-
-
 
 }

@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/alata"
-            android:text="Programa Milhas Viva Bem"
+            android:text="Como marcar uma consulta"
             android:textSize="21sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -61,9 +61,9 @@
             android:layout_width="381dp"
             android:layout_height="421dp"
             android:fontFamily="@font/alata"
-            android:text="Na Viva Bem, cuidamos da sua saúde e recompensamos sua fidelidade com o Programa Viva Bem Milhas. Ao dar feedback sobre clínicas conveniadas, você acumula milhas que podem ser trocadas por cupons em farmácias e supermercados parceiros. Avaliando uma clínica após uma consulta, você acumula milhas automaticamente. Essas milhas são trocáveis pelo app Viva Bem, oferecendo descontos em medicamentos, produtos de saúde e itens de supermercado. Acompanhe e troque suas milhas pelo app para economizar mais e viver melhor."
+            android:text="Para selecionar uma clínica e marcar uma consulta no aplicativo Viva Bem, comece abrindo o aplicativo e fazendo login com suas credenciais. No menu principal, escolha a opção &quot;Clínicas&quot; e use a barra de pesquisa para encontrar a clínica desejada ou navegue pelas opções listadas. Clique na clínica de sua escolha para ver mais detalhes. Dentro da página da clínica, selecione &quot;Marcar Consulta&quot;, escolha o tipo de consulta desejada, e selecione a data e hora disponíveis conforme sua preferência. Confirme os detalhes e clique em &quot;Agendar&quot;. Você receberá uma confirmação da consulta via notificação e e-mail. Verifique todas as informações e, se necessário, cancele ou altere a consulta diretamente pelo aplicativo. O aplicativo enviará lembretes para você não esquecer sua consulta. Pronto, agora você está com sua consulta marcada de forma simples e rápida pelo aplicativo Viva Bem."
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
@@ -103,8 +103,9 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/navigation_menu" >
+        app:menu="@menu/navigation_menu">
 
     </com.google.android.material.navigation.NavigationView>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
