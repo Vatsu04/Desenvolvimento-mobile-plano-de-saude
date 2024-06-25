@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity$LoginActivity" />
         <activity android:name=".CadastroActivity" />
         <activity android:name=".ConfirmarDadosActivity" />
         <activity android:name=".DrawerUtil" />
