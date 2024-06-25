@@ -24,14 +24,6 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        drawerLayout = findViewById(R.id.drawer_layout);
-
-        findViewById(R.id.imageView6).setOnClickListener((view) -> {
-                drawerLayout.openDrawer(GravityCompat.START);
-        });
-
-        NavigationView navigationView = findViewById(R.id.navigationView);
-        navigationView.setItemIconTintList(null);
     }
 
     public void navigateLogin(View view) {
@@ -70,41 +62,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-    public static class LoginActivity extends AppCompatActivity {
-
-        private DrawerLayout drawerLayout;
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_login);
-
-            drawerLayout = findViewById(R.id.drawer_layout);
-
-            findViewById(R.id.imageView6).setOnClickListener((view) -> {
-                drawerLayout.openDrawer(GravityCompat.START);
-            });
-
-            NavigationView navigationView = findViewById(R.id.navigationView);
-            navigationView.setItemIconTintList(null);
-        }
-
-        public void login(View view){
-            EditText emailField = findViewById(R.id.editTextText3);
-            EditText passwordField = findViewById(R.id.editTextTextPassword2);
-
-            String email = emailField.getText().toString();
-            String password = passwordField.getText().toString();
-
-            Toast.makeText(this, "Login Confirmado!", Toast.LENGTH_SHORT).show();
-            Intent mainIntent = new Intent(this, MenuActivity.class);
-
-        }
-
-        public void navigateMain(View view) {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-        }
+    public void log_in(View view){
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
     }
+
+
+
 }

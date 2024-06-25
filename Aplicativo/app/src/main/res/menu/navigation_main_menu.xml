@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_cad"
+        android:onClick="navigateCadastro"
+        android:title="Cadastro" />
+
+    <item
+        android:id="@+id/nav_clientes"
+        android:onClick="navigateClientes"
+        android:title="Clientes" />
+    <item
+        android:id="@+id/nav_agendamentos"
+        android:onClick="navigateAgendamentos"
+        android:title="Agendamentos" />
+    <item
+        android:id="@+id/nav_programa_milhas"
+        android:onClick="navigateProgamaMilhas"
+        android:title="Programa Milhas" />
+    <item
+        android:id="@+id/nav_missao"
+        android:onClick="navigateMissao"
+        android:title="Missão" />
+    <item
+        android:id="@+id/nav_sobre"
+        android:onClick="navigateSobre"
+        android:title="Sobre" />
+
     <item
         android:id="@+id/nav_consulta"
         android:onClick="navigateToAgendamentosActivity"
@@ -14,10 +44,6 @@
         android:onClick="navigateToFeedbackActivity"
         android:title="Feedback" />
 
-    <item
-        android:id="@+id/nav_logOut"
-        android:onClick="logOut"
-        android:title="Log" />
 
 
 

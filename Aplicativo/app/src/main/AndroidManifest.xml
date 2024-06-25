@@ -25,10 +25,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity$LoginActivity" />
         <activity android:name=".CadastroActivity" />
         <activity android:name=".ConfirmarDadosActivity" />
-        <activity android:name=".DrawerUtil" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AgendamentosActivity" />
+        <activity android:name=".AgendarConsultaActivity" />
+        <activity android:name=".ClienteActivity" />
+        <activity android:name=".EscreverFeedbackActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".ContatoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
