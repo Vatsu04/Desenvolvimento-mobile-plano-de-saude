@@ -64,8 +64,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Feedback"
-            tools:layout_editor_absoluteX="150dp"
-            tools:layout_editor_absoluteY="557dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.814" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="415dp"
@@ -96,7 +100,7 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="navigateMain"
+            android:onClick="logOut"
             android:text="Log Out"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
