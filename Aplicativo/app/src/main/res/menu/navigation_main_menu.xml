@@ -3,16 +3,13 @@
 
     <item
         android:id="@+id/nav_consulta"
-        android:onClick="navigateToAgendamentosActivity"
         android:title="Agendar Consulta" />
     <item
         android:id="@+id/nav_milhas"
-        android:onClick="navigateToMilhasActivity"
         android:title="Milhas" />
 
     <item
         android:id="@+id/nav_feedback"
-        android:onClick="navigateToFeedbackActivity"
         android:title="Feedback" />
 
 

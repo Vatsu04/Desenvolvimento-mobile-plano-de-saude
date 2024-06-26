@@ -72,6 +72,7 @@
             app:layout_constraintVertical_bias="0.814" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout10"
             android:layout_width="415dp"
             android:layout_height="25dp"
             android:background="#00C8C0"
@@ -139,8 +140,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            tools:layout_editor_absoluteX="91dp"
-            tools:layout_editor_absoluteY="67dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="0.102" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -149,6 +154,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/navigation_main_menu" />
+        app:menu="@menu/navigation_main_menu" ></com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

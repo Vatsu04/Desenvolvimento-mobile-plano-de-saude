@@ -35,6 +35,14 @@
         <activity android:name=".FeedbackActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".ContatoActivity" />
+        <activity android:name=".SobreActivity" />
+        <activity android:name=".ProgramaMilhasActivity" />
+        <activity android:name=".MilhasActivity" />
+        <activity android:name=".MissaoActivity" />
+        <activity android:name=".RedesSociais" />
+        <activity android:name=".AgendamentosInfoActivity" />
+
+
 
         <meta-data
             android:name="preloaded_fonts"
