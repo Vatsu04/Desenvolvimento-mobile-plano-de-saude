@@ -43,13 +43,14 @@
                 android:id="@+id/textView11"
                 android:layout_width="387dp"
                 android:layout_height="148dp"
-                android:layout_marginStart="8dp"
                 android:fontFamily="@font/alata"
                 android:text="Como você prefere falar com a gente?"
                 android:textAlignment="center"
                 android:textSize="38sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.518"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.85" />
@@ -58,12 +59,14 @@
                 android:id="@+id/button23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="navigateMain"
+                android:onClick="voltarParaSobre"
                 android:text="Voltar"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.024"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.077"
-                tools:layout_editor_absoluteX="16dp" />
+                app:layout_constraintVertical_bias="0.077" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!-- Other views from the main content -->
@@ -159,8 +162,11 @@
             android:fontFamily="@font/alata"
             android:text="www.vivabem.com"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="663dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.932" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- NavigationView for drawer -->

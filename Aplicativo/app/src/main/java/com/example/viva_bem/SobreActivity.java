@@ -121,4 +121,8 @@ public class SobreActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void navigateRedesSociais(){
+        Intent intent = new Intent(this, RedesSociais.class);
+        startActivity(intent);
+    }
 }

@@ -1,5 +1,6 @@
 package com.example.viva_bem;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,5 +27,11 @@ public class RedesSociais extends AppCompatActivity {
         navigationView.setItemIconTintList(null);
 
     }
+
+    public void voltarParaSobre(){
+        Intent intent = new Intent(this, SobreActivity.class);
+        startActivity(intent);
+    }
+
 
 }
