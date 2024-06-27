@@ -3,6 +3,7 @@ package com.example.viva_bem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -121,12 +122,12 @@ public class SobreActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void navigateRedesSociais(){
+    public void navigateRedesSociais(View view){
         Intent intent = new Intent(this, RedesSociais.class);
         startActivity(intent);
     }
 
-    public void navigateContato(){
+    public void navigateContato(View view){
         Intent intent = new Intent(this, ContatoActivity.class);
         startActivity(intent);
     }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -19,6 +20,9 @@ public class AgendamentosInfoActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
+    private int milhas = 0;
+    private TextView milhasTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,48 +82,56 @@ public class AgendamentosInfoActivity extends AppCompatActivity {
     private void navigateMain() {
 
         Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     private void navigateCadastro() {
 
         Intent intent = new Intent(this, CadastroActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     private void navigateLogin() {
 
         Intent intent = new Intent(this, LoginActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     private void navigateClientes() {
 
         Intent intent = new Intent(this, ClienteActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     private void navigateAgendamentosInfo() {
 
         Intent intent = new Intent(this, AgendamentosInfoActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     private void navigateProgramaMilhas() {
 
         Intent intent = new Intent(this, ProgramaMilhasActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     private void navigateMissao() {
 
         Intent intent = new Intent(this, MissaoActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     private void navigateSobre() {
 
         Intent intent = new Intent(this, SobreActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 }

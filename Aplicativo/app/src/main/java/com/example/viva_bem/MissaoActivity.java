@@ -112,6 +112,7 @@ public class MissaoActivity extends AppCompatActivity {
     private void navigateMissao() {
 
         Intent intent = new Intent(this, MissaoActivity.class);
+
         startActivity(intent);
     }
 

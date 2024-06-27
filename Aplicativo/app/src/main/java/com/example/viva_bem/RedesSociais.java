@@ -2,6 +2,7 @@ package com.example.viva_bem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -28,7 +29,7 @@ public class RedesSociais extends AppCompatActivity {
 
     }
 
-    public void voltarParaSobre(){
+    public void voltarParaSobre(View view){
         Intent intent = new Intent(this, SobreActivity.class);
         startActivity(intent);
     }

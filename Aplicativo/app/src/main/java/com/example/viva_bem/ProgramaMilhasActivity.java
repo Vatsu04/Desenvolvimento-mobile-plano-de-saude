@@ -119,6 +119,12 @@ public class ProgramaMilhasActivity extends AppCompatActivity {
     private void navigateSobre() {
 
         Intent intent = new Intent(this, SobreActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void milhasParaMain(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

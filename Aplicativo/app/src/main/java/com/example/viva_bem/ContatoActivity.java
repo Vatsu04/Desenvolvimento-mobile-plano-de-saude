@@ -1,6 +1,8 @@
 package com.example.viva_bem;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -27,4 +29,9 @@ public class ContatoActivity extends AppCompatActivity {
 
     }
 
+
+    public void contatoParaSobre(View view){
+        Intent intent = new Intent(this, SobreActivity.class);
+        startActivity(intent);
+    }
 }

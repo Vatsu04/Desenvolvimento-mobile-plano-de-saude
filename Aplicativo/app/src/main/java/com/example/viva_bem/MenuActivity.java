@@ -3,6 +3,7 @@ package com.example.viva_bem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +20,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
-    private int milhas = 200;
+    private int milhas = 0;
     private TextView milhasTextView;
 
     @Override
@@ -82,18 +83,45 @@ public class MenuActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void navigateToMilhasActivity() {
+    private void navigateToMilhasActivity() {
         Intent intent = new Intent(this, MilhasActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
-    public void navigateToAgendamentosActivity() {
+    private void navigateToAgendamentosActivity() {
         Intent intent = new Intent(this, AgendarConsultaActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
-    public void navigateToFeedbackActivity() {
+    private void navigateToFeedbackActivity() {
         Intent intent = new Intent(this, FeedbackActivity.class);
+        intent.putExtra("milhas", milhas);
+        startActivity(intent);
+    }
+
+    public void irParaMilhas(View view){
+        Intent intent = new Intent(this, MilhasActivity.class);
+        intent.putExtra("milhas", milhas);
+        startActivity(intent);
+    }
+
+    public void irParaAgendamentos(View view) {
+        Intent intent = new Intent(this, AgendarConsultaActivity.class);
+        intent.putExtra("milhas", milhas);
+        startActivity(intent);
+    }
+
+    public void irParaFeedback(View view) {
+        Intent intent = new Intent(this, FeedbackActivity.class);
+        intent.putExtra("milhas", milhas);
+        startActivity(intent);
+    }
+
+    public void log_out(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 }

@@ -4,6 +4,7 @@ package com.example.viva_bem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -118,5 +119,15 @@ public class MainActivity extends AppCompatActivity {
 
          Intent intent = new Intent(this, SobreActivity.class);
          startActivity(intent);
+    }
+
+    public void irParaCadastro(View view){
+        Intent intent = new Intent(this, CadastroActivity.class);
+        startActivity(intent);
+    }
+
+    public void irParaLogin(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

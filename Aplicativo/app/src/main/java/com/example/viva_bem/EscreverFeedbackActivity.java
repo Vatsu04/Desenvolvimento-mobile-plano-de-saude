@@ -2,7 +2,9 @@ package com.example.viva_bem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -36,19 +38,20 @@ public class EscreverFeedbackActivity extends AppCompatActivity {
     }
 
     private void incrementMilhasUI(){
-        milhas += 300;
+        milhas += 400;
         updateMilhasUI();
     }
 
-    public void navigateBack() {
+    public void escreverFeedbackParaMain(View view) {
         Intent intent = new Intent(this, FeedbackActivity.class);
         intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
-    public void enviarFeedback(){
+    public void enviarFeedback(View view){
         Intent intent = new Intent(this, MenuActivity.class);
         incrementMilhasUI();
+        Toast.makeText(this, "Obrigado pelo seu feedback!", Toast.LENGTH_SHORT).show();
         intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
