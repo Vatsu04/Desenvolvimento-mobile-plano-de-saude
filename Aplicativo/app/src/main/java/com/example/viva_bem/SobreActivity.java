@@ -125,4 +125,9 @@ public class SobreActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RedesSociais.class);
         startActivity(intent);
     }
+
+    public void navigateContato(){
+        Intent intent = new Intent(this, ContatoActivity.class);
+        startActivity(intent);
+    }
 }
