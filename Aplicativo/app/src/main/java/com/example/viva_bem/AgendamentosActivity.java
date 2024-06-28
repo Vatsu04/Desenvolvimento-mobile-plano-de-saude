@@ -17,7 +17,8 @@ import org.w3c.dom.Text;
 public class AgendamentosActivity extends AppCompatActivity {
 
     private int milhas = 0;
-    private String nomeClinica;
+
+    private TextView milhasTextView;
 
 
     @Override
@@ -26,20 +27,31 @@ public class AgendamentosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_agendamentos);
 
 
+        milhasTextView = findViewById(R.id.textView38);
 
+        String clinicName = getIntent().getStringExtra("CLINIC_NAME");
+
+        TextView clinicNameTextView = findViewById(R.id.textView39);
+        clinicNameTextView.setText(clinicName);
 
         Intent intent = getIntent();
         if (intent.hasExtra("milhas")) {
             milhas = intent.getIntExtra("milhas", 0);
         }
 
-        if(intent.hasExtra("CLINIC_NAME")){
-            nomeClinica = intent.getStringExtra("CLINIC_NAME");
-        }
-
+        updateMilhasUI();
+    }
+    private void updateMilhasUI() {
+        milhasTextView.setText(String.valueOf(milhas));
     }
 
-    public void voltarDeAgendamentosParaMenu(){
+    public void voltarDeAgendamentosParaAgendarConsulta(View view){
+        Intent intent = new Intent(this, AgendarConsultaActivity.class);
+        intent.putExtra("milhas", milhas);
+        startActivity(intent);
+    }
+
+    public void agendarConsulta(View view){
         Intent intent = new Intent(this, MenuActivity.class);
         intent.putExtra("milhas", milhas);
         startActivity(intent);

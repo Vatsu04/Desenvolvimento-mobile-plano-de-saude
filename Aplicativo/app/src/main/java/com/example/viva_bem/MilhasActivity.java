@@ -45,8 +45,8 @@ public class MilhasActivity extends AppCompatActivity {
 
             if (id == R.id.nav_consulta) {
                 navigateToAgendamentosActivity();
-            } else if (id == R.id.nav_milhas) {
-                navigateToMilhasActivity();
+            } else if (id == R.id.nav_menu) {
+                navigateToMenuActivity();
             } else if (id == R.id.nav_feedback) {
                 navigateToFeedbackActivity();
             }
@@ -56,8 +56,8 @@ public class MilhasActivity extends AppCompatActivity {
         });
 
 
-        ImageView imageView16 = findViewById(R.id.imageView16);
-        imageView16.setOnClickListener(view -> {
+        ImageView imageView6 = findViewById(R.id.imageView6);
+        imageView6.setOnClickListener(view -> {
             drawerLayout.openDrawer(GravityCompat.START); // Open the navigation drawer
         });
 
@@ -133,8 +133,8 @@ public class MilhasActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void navigateToMilhasActivity() {
-        Intent intent = new Intent(this, MilhasActivity.class);
+    private void navigateToMenuActivity() {
+        Intent intent = new Intent(this, MenuActivity.class);
         intent.putExtra("milhas", milhas);
         startActivity(intent);
     }

@@ -134,21 +134,5 @@ public class AgendarConsultaActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void navigateMenu() {
-        Intent intent = new Intent(this, MenuActivity.class);
-        intent.putExtra("milhas", milhas);
-        startActivity(intent);
-    }
 
-    private void navigateFeedback(){
-        Intent intent = new Intent(this, FeedbackActivity.class);
-        intent.putExtra("milhas", milhas);
-        startActivity(intent);
-    }
-
-    private void navigateMilhas(){
-        Intent intent = new Intent(this, MilhasActivity.class);
-        intent.putExtra("milhas", milhas);
-        startActivity(intent);
-    }
 }

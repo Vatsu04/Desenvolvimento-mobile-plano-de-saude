@@ -124,11 +124,13 @@ public class FeedbackActivity extends AppCompatActivity {
     private void navigateToEscreverFeedbackActivity(String clinicName) {
         Intent intent = new Intent(this, EscreverFeedbackActivity.class);
         intent.putExtra("CLINIC_NAME", clinicName);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 
     public void navegarMenu(){
         Intent intent = new Intent(this, MenuActivity.class);
+        intent.putExtra("milhas", milhas);
         startActivity(intent);
     }
 }
