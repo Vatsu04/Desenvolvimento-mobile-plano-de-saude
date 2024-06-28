@@ -69,6 +69,8 @@ public class MilhasActivity extends AppCompatActivity {
         }
 
         updateMilhasUI();
+
+        setupButtonListeners();
     }
 
 
@@ -101,6 +103,7 @@ public class MilhasActivity extends AppCompatActivity {
             public void onClick(View view) {
                 decrementMilhas(100);
             }
+
         });
 
         findViewById(R.id.button16).setOnClickListener(new View.OnClickListener() {

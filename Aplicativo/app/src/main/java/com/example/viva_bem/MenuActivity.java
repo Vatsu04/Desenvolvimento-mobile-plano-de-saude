@@ -20,7 +20,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
-    private int milhas = 0;
+    private int milhas;
     private TextView milhasTextView;
 
     @Override
