@@ -60,29 +60,37 @@
             android:layout_width="106dp"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
+            android:background="@drawable/button_forward"
+            android:fontFamily="@font/alata"
             android:onClick="irParaCadastro"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
             android:text="Cadastro"
             android:textColorLink="#2E6FF2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.722" />
+            app:layout_constraintVertical_bias="0.702" />
 
         <Button
             android:id="@+id/button_login"
             android:layout_width="106dp"
             android:layout_height="48dp"
             android:layout_marginBottom="8dp"
+            android:background="@drawable/button_forward"
+            android:fontFamily="@font/alata"
             android:onClick="irParaLogin"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
             android:text="Login"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.794" />
+            app:layout_constraintVertical_bias="0.822" />
 
         <TextView
             android:id="@+id/textView2"
